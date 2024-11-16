@@ -19,7 +19,7 @@ while True:
         "tugas": tugas,
         "uts": uts,
         "uas": uas,
-        "nilai_akhir": nilai_akhir
+        "Akhir": nilai_akhir
     })
 
     # menambah data lagi
@@ -29,7 +29,9 @@ while True:
 
 # Tampilkan daftar data mahasiswa
 print("\nDaftar Data Mahasiswa:")
-print("No | Nama       | Nim      | Tugas | UTS   | UAS   | Nilai Akhir")
-print("-" * 70)
+print("=" * 60)
+print("No | Nama       | Nim      | Tugas | UTS   | UAS   | Akhir |")
+print("=" * 60)
 for i, mahasiswa in enumerate(DM, start=1):
-    print(f"{i:2} | {mahasiswa['Nama']:<10} |  {mahasiswa['Nim']:<7} | {mahasiswa['tugas']:<5} | {mahasiswa['uts']:<5} | {mahasiswa['uas']:<5} | {mahasiswa['nilai_akhir']:.2f}")
+    print(f"{i:2} | {mahasiswa['Nama']:<10} |  {mahasiswa['Nim']:<7} | {mahasiswa['tugas']:<5} | {mahasiswa['uts']:<5} | {mahasiswa['uas']:<5} | {mahasiswa['Akhir']:.2f} |")
+print("=" * 60)
